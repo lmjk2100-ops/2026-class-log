@@ -1,0 +1,33 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() 
+{
+    if
+    int day;//정수형 변수
+    float money;//실수형 변수
+    char name[30];//문자열 출력(문자 2개 이상)
+    char grade;//문자형 출력(문자1개)
+    
+    // Write C code here
+    printf("여행지를 입력하세요:");//화면출력 f(서식)
+    scanf("%s", name);//키보드로 입력받을때
+    //scanf에 문자열을 입력할때는 문자열 배열은 배열 이름 자체가 주소이므로 &를 붙이지않는다
+    
+    printf("여행 일수를 입력하세요:");
+    scanf("%d", &day);
+    
+    printf("여행 경비를 입력하세요:");
+    scanf("%f/n", &money);
+    
+    printf("여행 등급을 입력하세요(A,B,C):");
+    scanf(" %c", &grade);
+    
+    printf("\n여행일정");
+    
+    printf("여행지:%s\n",name);
+    printf("여행 일수:%d일\n" ,day);
+    printf("여행 경비:%.1f만원\n", money);
+    printf("여행 등급:%c\n",grade);
+    return 0;
+}
