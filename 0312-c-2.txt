@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main()
+{
+    char blood;
+    printf("혈액형 입력(A, B, C):");
+    scanf(" %c", &blood);
+    
+    //조건문 switch ~case
+    switch(blood)
+    {
+        case 'A':
+            printf("A형 입니다\n");
+            break;
+        case 'B':
+            printf("B형 입니다\n");
+            break;
+        case 'C':
+            printf("C 입니다\n");
+            break;
+        default:
+            printf("입력 오류\n");
+            //break;는 default가 마지막 줄이라서 안써도 가능
+            //실무에선 실수방지를 위해 사용하는 경우가 많음
+        
+    }
+    return 0;
+}
