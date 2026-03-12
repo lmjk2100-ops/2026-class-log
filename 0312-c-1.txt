@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main()
+{
+    int num; 
+    
+    while(1)  //참일때 반복, 0->거짓(false), 1->참(true)
+              //무한반복
+ {    
+    printf("숫자를 입력하세요:");
+    scanf("%d",&num);
+    
+    if(num == 10){
+    printf("정답입니다\n");  //조건문 if에는 큰따음표를 쓰지 않음
+        break; //반복문 중지 빠져나오는 명령어
+    }
+    
+    else if(num > 10){  //여러 조건문을 순서대로 검사 할 때 사용하는 조건문
+    printf("너무 높아요\n");
+    }
+    
+    //else if(sub>= 1000){
+    //printf("너무 낮아요\n");
+    else{
+    printf("너무 낮아요\n");    
+    }
+ }
+    return 0;
+}
